@@ -58,7 +58,7 @@ function parseData() {
         return retval;
     }, []);
 
-    data.sort();
+    data.sort((a, b) => a - b);
 }
 
 
