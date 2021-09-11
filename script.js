@@ -3,12 +3,16 @@ const range_text = document.querySelector('#range');
 const mean_text = document.querySelector('#mean');
 const variance_text = document.querySelector('#variance');
 const sd_text = document.querySelector('#standard_deviation');
+const sample_variance_text = document.querySelector('#sample_variance');
+const sample_sd_text = document.querySelector('#sample_standard_deviation');
 
 let data; // array of data elements
 let range; // the value when subtracting the highest to the lowest
 let mean; // the mean of the given data
 let variance; // the variance of the given data
 let sd; // the standard deviation of the given data
+let sample_variance; // the sample variance of the given data
+let sample_sd; // the sample standard deviation of the given data
 
 
 function calculate() {
@@ -20,6 +24,8 @@ function calculate() {
     getMean();
 
     getVariance();
+
+    getStandardDeviation();
 
 }
 
@@ -62,4 +68,20 @@ function getMean() {
 
 }
 
+function getVariance() {
 
+    let sumation = data.reduce((retval, current_data) => {
+        return retval + (current_data - mean) ** 2;
+    }, 0);
+
+
+    variance = sumation / data.length;
+    sample_variance = sumation / (data.length - 1);
+
+    variance_text.innerHTML = variance;
+    sample_variance_text.innerHTML = sample_variance;
+
+}
+
+
+// 35 45 30 35 40 25
