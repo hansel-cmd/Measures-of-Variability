@@ -83,5 +83,15 @@ function getVariance() {
 
 }
 
+function getStandardDeviation() {
+
+    sd = Math.sqrt(variance);
+    sample_sd = Math.sqrt(sample_variance);
+
+    sd_text.innerHTML = sd;
+    sample_sd_text.innerHTML = sample_sd;
+
+}
+
 
 // 35 45 30 35 40 25
