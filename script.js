@@ -17,6 +17,8 @@ let sample_sd; // the sample standard deviation of the given data
 
 function calculate() {
 
+    reset();
+
     parseData();
 
     getRange();
@@ -27,6 +29,17 @@ function calculate() {
 
     getStandardDeviation();
 
+}
+
+function reset() {
+
+    data = 0;
+    range = 0;
+    mean = 0;
+    variance = 0;
+    sd = 0;
+    sample_variance = 0;
+    sample_sd = 0;
 }
 
 
