@@ -33,40 +33,45 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 border-bottom p-4">
-                    <p class="fs-4">Range: <span id="range"></span></p>
+                    <p class="fs-4">Range: <span id="range" class="text-danger fw-bold"></span></p>
                     <p>Formula: Range = Highest value - Lowest value</p>
                     <p>Shows how separate (or the distance) the largest data value from the smallest data value</p>
                 </div>
                 <div class="col-md-6 border-bottom p-4">
-                    <p class="fs-4">Mean: <span id="mean"></span></p>
+                    <p class="fs-4">Mean: <span id="mean" class="text-danger fw-bold"></span></p>
                     <p>Formula: <span>&#x03BC;</span> = <span>&#8721;</span> given_number / total_number</p>
                     <p><strong><span>&#x03BC;</span></strong> is the mean</p>
                 </div>
+
                 <div class="col-md-6 border-bottom p-4">
-                    <p class="fs-4">Population Variance: <span id="variance"></span></p>
+                    <p class="fs-4">Population Variance: <span id="variance" class="text-danger fw-bold"></span></p>
                     <p>Formula: <span>&sigma;</span><span>&sup2;</span> = <span>&#8721;</span>(X - <span>&#x03BC;</span>)&sup2; / N </p>
                     <p>Where <strong><em>N</em></strong> is the total number of data</p>
                     <p>Where <strong><em>X</em></strong> is each data</p>
                     <p>Where <strong><em>&#x03BC;</em></strong> is the population mean</p>
+                    <p>Is the average of the squares of the distance each value is from the population mean</p>
                 </div>
                 <div class="col-md-6 border-bottom p-4">
-                    <p class="fs-4">Population Standard Deviation: <span id="standard_deviation"></span></p>
+                    <p class="fs-4">Population Standard Deviation: <span id="standard_deviation" class="text-danger fw-bold"></span></p>
                     <p>Formula: <span>&sigma;</span> = <span>&#8730;</span><span>&sigma;</span><span>&sup2;</span></p>
-                    <p></p>
+                    <p>It refers to how far the value is to the mean</p>
+                    <p>Is the square root of the variance</p>
                 </div>
 
 
                 <div class="col-md-6 border-bottom p-4">
-                    <p class="fs-4">Sample Variance: <span id="sample_variance"></span></p>
+                    <p class="fs-4">Sample Variance: <span id="sample_variance" class="text-danger fw-bold"></span></p>
                     <p>Formula: <span>S</span><span>&sup2;</span> = <span>&#8721;</span>(X - <span>X&#772;</span>)<span>&sup2;</span> / (n - 1) </p>
                     <p>Where <strong><em>n</em></strong> is the total number of data</p>
                     <p>Where <strong><em>X</em></strong> is each data</p>
                     <p>Where <strong><em>X&#772;</em></strong> is the sample mean</p>
+                    <p>Is the average of the squares of the distance each value is from the sample mean</p>
                 </div>
                 <div class="col-md-6 border-bottom p-4">
-                    <p class="fs-4">Sample Standard Deviation: <span id="sample_standard_deviation"></span></p>
+                    <p class="fs-4">Sample Standard Deviation: <span id="sample_standard_deviation" class="text-danger fw-bold"></span></p>
                     <p>Formula: <span>S</span> = <span>&#8730;</span><span>S</span><span>&sup2;</span></p>
-                    <p></p>
+                    <p>It refers to how far the value is to the mean</p>
+                    <p>Is the square root of the variance</p>
                 </div>
             </div>
         </div>
